@@ -7,7 +7,13 @@ Guzel Nasybullina
 Dartor Bolo  
 
 ## Booking System
-A menu displaying food items available for order.
+A menu displaying food items available for order. Here people will be able to order
+food from a menu by choosing what they want. Also, they will be able to add extra
+ingredients, or remove an ingredient they do not want. In addition, they can add
+a drink, or sides. They can choose payment options, and whether they want to pick-up,
+dine-in, or to-go. If dine-in, we could have it to if they prefer to sit at a table or
+booth. Lastly, we can have it remember the order if they return to the page before
+so that it is less tedious, and more user friendly.  
 
 ## Group Repo
 https://github.com/Tech-Warriors/itmd-362-project2
