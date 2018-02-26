@@ -12,7 +12,7 @@ pizza from a menu by choosing what they want. Also, they will be able to add ext
 ingredients, or remove an ingredient they do not want. In addition, they can add
 a drink, or sides. They can choose payment options, and whether they want to pick-up,
 dine-in, or delivery. If dine-in, we could have them reserve a time and table for
-the amount of people. Lastly, we can have it remember the order if they return to
+the number of people. Lastly, we can have it remember the order if they return to
 the page before so that it is less tedious, and more user friendly.  
 
 ## Group Repo
