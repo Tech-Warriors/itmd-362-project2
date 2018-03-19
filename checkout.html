@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+
+<head>
+  <title>CheckOut</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="screen.css" />
+  <link rel="stylesheet" href="//basehold.it/24" />
+</head>
+
+<body>
+  <header>
+    <h1>Check Out</h1>
+  </header>
+  <main>
+    <form action="#null" method="get" id="checkout-form" novalidate>
+      <section id="contactInfo">
+        <h2>Contact Info</h2>
+      </section>
+      <ol>
+        <li id="fullName">
+          <label for="name">Name</label>
+          <input placeholder="James Smith" type="text" id="name" name="name" />
+        </li>
+
+        <li id="emailAddress">
+          <label for="email">Email</label>
+          <input placeholder="name@example.com" type="email" id="email" name="email" />
+        </li>
+
+      </ol>
+      <section id="PaymentInfo">
+        <h2>Payment Info</h2>
+      </section>
+      <ol>
+        <li id="creditCard">
+          <label for="card">Credit Card</label>
+          <input placeholder="1234 5678 9123 4567" type="number" id="card" name="card" />
+        </li>
+        <!-- What data type should I use for month and year only?-->
+        <li id="expDate">
+          <label for="date">Expiration Date</label>
+          <input type="date" id="date" name="date" />
+        </li>
+
+        <li id="secCode">
+          <label for="code">Security Code</label>
+          <input placeholder="123" type="number" id="code" name="code" />
+        </li>
+
+        <li id="nameCard">
+          <label for="nCard">Name on Card</label>
+          <input placeholder="James Smith" type="text" id="nCard" name="nCard" />
+        </li>
+        <!-- Should I add section for billing info?-->
+
+        <!-- Review button will transwer to review order page. Should I just add review information
+        at the beginning of this page and use 1 page instead of 2?>
+       -->
+        <li id="reviewOrder">
+          <input type="submit" id="review" value="Review Order >>>" />
+        </li>
+      </ol>
+    </form>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
