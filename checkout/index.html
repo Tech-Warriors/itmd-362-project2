@@ -14,26 +14,23 @@
     <h1>Check Out</h1>
   </header>
   <main>
-    <form action="#null" method="get" id="checkout-form" novalidate>
-      <section id="review">
-        <h2>Review your order</h2>
-      </section>
-
-      <!-- Here I will add an option to review order
+    <section id="review">
+      <h2>Review your order</h2>
+    </section>
+    <!-- Here I will add an option to review order
       I wonder how can I display order without JS
       -->
+    <ol>
+      <li id="size"></li>
+      <li id="crust"></li>
+      <li id="cheese"></li>
+      <li id="meats"></li>
+      <li id="veggies"></li>
+      <li id="total"></li>
+    </ol>
 
-
-      <ol>
-        <li id="size"></li>
-        <li id="crust"></li>
-        <li id="cheese"></li>
-        <li id="meats"></li>
-        <li id="veggies"></li>
-        <li id="total"></li>
-      </ol>
-
-      <!-- Contact information - name and email address (phone number?) -->
+    <form action="#null" method="get" id="checkout-form" novalidate>
+      <!-- Contact information - name and email address (maybe phone number?) -->
       <section id="contactInfo">
         <h3>Contact Info</h3>
       </section>
@@ -74,6 +71,7 @@
     </form>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="site.js"></script>
 </body>
 
 </html>
