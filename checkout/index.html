@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+
+<head>
+  <title>CheckOut</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="screen.css" />
+  <link rel="stylesheet" href="//basehold.it/24" />
+</head>
+
+<body>
+  <header>
+    <h1>Check Out</h1>
+  </header>
+  <main>
+    <section id="review">
+      <h2>Review your order</h2>
+    </section>
+    <!-- Here I will add an option to review order
+      I wonder how can I display order without JS
+      -->
+    <ol>
+      <li id="size"></li>
+      <li id="crust"></li>
+      <li id="cheese"></li>
+      <li id="meats"></li>
+      <li id="veggies"></li>
+      <li id="total"></li>
+    </ol>
+
+    <form action="#null" method="get" id="checkout-form" novalidate>
+      <!-- Contact information - name and email address (maybe phone number?) -->
+      <section id="contactInfo">
+        <h3>Contact Info</h3>
+      </section>
+      <ol>
+        <li id="fullName">
+          <label for="name">Name</label>
+          <input placeholder="James Smith" type="text" id="name" name="name" />
+        </li>
+
+        <li id="emailAddress">
+          <label for="email">Email</label>
+          <input placeholder="name@example.com" type="email" id="email" name="email" />
+        </li>
+
+      </ol>
+      <!-- billing information will be added here later
+      <section id="PaymentInfo">
+        <h4>Payment Info</h4>
+      </section>
+      <ol>
+        <li id="creditCard">
+          <label for="card">Credit Card</label>
+          <input placeholder="1234 5678 9123 4567" type="number" id="card" name="card" />
+        </li>
+        <li id="nameCard">
+          <label for="nCard">Name on Card</label>
+          <input placeholder="James Smith" type="text" id="nCard" name="nCard" />
+        </li>
+        <li id="expDate">
+          <label for="date">Expiration Date</label>
+          <input type="date" id="date" name="date" />
+        </li>
+        <li id="secCode">
+          <label for="code">Security Code</label>
+          <input placeholder="123" type="number" id="code" name="code" />
+        </li>
+      </ol> -->
+    </form>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="site.js"></script>
+</body>
+
+</html>
