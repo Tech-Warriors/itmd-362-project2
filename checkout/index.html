@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Check Out</h1>
+    <h1>Tech-Warriors Pizza</h1>
   </header>
   <main>
     <section id="review">
@@ -29,31 +29,18 @@
       <li id="total"></li>
     </ol>
 
+    <section id="paymentInfo">
+      <h4>Payment Info</h4>
+    </section>
     <form action="#null" method="get" id="checkout-form" novalidate>
-      <!-- Contact information - name and email address (maybe phone number?) -->
-      <section id="contactInfo">
-        <h3>Contact Info</h3>
-      </section>
       <ol>
-        <li id="fullName">
-          <label for="name">Name</label>
-          <input placeholder="James Smith" type="text" id="name" name="name" />
-        </li>
-
         <li id="emailAddress">
           <label for="email">Email</label>
           <input placeholder="name@example.com" type="email" id="email" name="email" />
         </li>
-
-      </ol>
-
-      <section id="PaymentInfo">
-        <h4>Payment Info</h4>
-      </section>
-      <ol>
         <li id="creditCard">
           <label for="card">Credit Card</label>
-          <input placeholder="1234 5678 9123 4567" type="number" id="card" name="card" />
+          <input placeholder="1234 5678 9123 4567" type="text" id="card" name="card" />
         </li>
         <li id="nameCard">
           <label for="nCard">Name on Card</label>
@@ -61,11 +48,14 @@
         </li>
         <li id="expDate">
           <label for="date">Expiration Date</label>
-          <input type="date" id="date" name="date" />
+          <input type="text" id="date" name="date" />
         </li>
         <li id="secCode">
           <label for="code">Security Code</label>
-          <input placeholder="123" type="number" id="code" name="code" />
+          <input placeholder="123" type="text" id="code" name="code" />
+        </li>
+        <li id="submitButton">
+          <input type="submit" id="submit" value="Order now!" />
         </li>
       </ol>
     </form>
