@@ -21,6 +21,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html, .reset {
   line-height: 1
+
 }
 
 ol, ul {
@@ -44,3 +45,8 @@ table {
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  background-color: #EF0003;
+  color: yellow;
+}
