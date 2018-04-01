@@ -49,4 +49,93 @@ table {
 html {
   background-color: #EF0003;
   color: yellow;
+  /*font-family: 'Bungee Shade';*/
+  font-size: 1.625em; /* 26 / 16 = 1.625 */
+  line-height: 0.923em; /* 24 / 26 = 0.923*/
+  padding: 0.75em;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: 'Fascinate Inline';
+}
+
+h2 {
+  font-family: 'Kaushan Script';
+
+}
+
+a {
+  font-family: 'Shadows Into Light';
+  color: #F34500;
+  background-color: black; /*#A73203;*/
+  border-radius: 0.2em;
+}
+
+body {
+  padding-bottom: 1.25em; /* 30 / 24 = 1.25 */
+}
+
+li {
+  padding-top: 1.25em; /* 30 / 24 = 1.25 */
+}
+
+ul {
+  padding-top: 1.25em; /* 30 / 24 = 1.25 */
+}
+
+p {
+  font-family: 'Merienda';
+  /*font-family: 'Rock Salt'; /*THIS IS MY PERSONAL FAV */
+}
+
+h4, label {
+  font-family: 'Kalam';
+}
+
+
+.input {
+  display: flex;
+}
+
+.input a {
+  line-height: 1;
+  margin-right: 0.611em; /* 11 / 18 = 0.6111 */
+  margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
+  padding: 0.722em 0; /* 13 / 18 = 0.722 */
+  width: 44px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main-page h1,
+#final-page h1 {
+  line-height: 1.38em; /* 36 / 26 = 1.38*/
+}
+
+#user-order p {
+  /*background-color: #A73203;*/
+  color: black;
+}
+
+/* TODO: REORDER THE INGRIDENTS FOR PIZZA BUILDER!
+#user-order label {
+  display: flex;
+}
+*/
+
+/* State Styles */
+/*Hint: these tend to be:
+1. Driven by media queries
+2. Influenced by JavaScript
+3. Organized by Base, Layout, Module, State
+*/
+
+@media screen and (min-width: 22.5em) {  /*360px*/
+}
+
+@media screen and (min-width: 50.25em) {  /* 804px*/
+}
+
+@media screen and (min-width: 82.5em) {  /*1320px*/
 }
