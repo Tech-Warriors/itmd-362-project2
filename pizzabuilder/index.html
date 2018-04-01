@@ -5,6 +5,7 @@
   <title>Pizza Builder</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link type="text/css" rel="stylesheet" href="../css/screen.css" />
+  <link rel="stylesheet" href="//basehold.it/22" />
 </head>
 <body>
   <header>
@@ -15,7 +16,7 @@
       <h2>Create Your Own:</h2>
     </section>
 
-    <form action="#null" method="get">
+    <form action="#null" method="get" id="user-order">
       <ol class="steps">
         <li>
           <a href="#sizeAndCrust">Size &amp; Crust </a>
@@ -226,7 +227,7 @@
         </li>
       </ol>
       <ul>
-        <li class="button"><a href="../checkout/">Continue to Checkout</a></li>
+        <li class="button"><a href="../checkout/">Checkout</a></li>
         <li class="button"><a href="../">Back</a></li>
       </ul>
     </form>
@@ -234,5 +235,16 @@
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/site.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Bungee Shade:400', 'Rock Salt:400',
+      'Merienda:400', 'Kalam:400', 'Fascinate Inline:400', 'Kaushan Script:400',
+      'Shadows Into Light:400']
+    }
+  });
+</script>
 </body>
 </html>
