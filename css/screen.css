@@ -135,6 +135,13 @@ figcaption {
 }
 */
 
+/* Responsive Media */
+img {
+  padding-top: 1.125em; /* 18 / 16 = 1.125 */
+  display: block;
+  max-width: 100%;
+}
+
 /* State Styles */
 /*Hint: these tend to be:
 1. Driven by media queries
