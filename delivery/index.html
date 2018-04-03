@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="no-js" lang="en-US">
+<html class="no-js" lang="en-US">
 <head>
   <title>Delivery</title>
   <meta charset="UTF-8"/>
@@ -12,7 +12,7 @@
     <h1> Pizza Delivery </h1>
   </header>
   <main>
-    <form>
+    <form action="#null" method="get" id="delivery-form" novalidate="novalidate">
     <ol class="info">
       <li>
         <label for="address">Address:</label>
@@ -90,7 +90,7 @@
      </li>
     </ol>
     <ul>
-      <li class="button"><a href="../pizzabuilder/">Continue</a></li>
+      <li id="order-button"><a href="../pizzabuilder/">Continue</a></li>
       <li class="button"><a href="../">Back</a></li>
     </ul>
     </form>

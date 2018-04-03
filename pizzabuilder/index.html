@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Pizza Builder</title>
@@ -36,17 +36,17 @@
         <li>
           <p>Pizza Size</p>
 
-          <input type="radio" id="size1" name="sizes">
-          <label for="size1">Small</label>
+          <input type="radio" id="size-sm" name="sizes">
+          <label for="size-sm">Small</label>
 
-          <input type="radio" id="size2" name="sizes">
-          <label for="size2">Medium</label>
+          <input type="radio" id="size-md" name="sizes">
+          <label for="size-md">Medium</label>
 
-          <input type="radio" id="size3" name="sizes">
-          <label for="size3">Large</label>
+          <input type="radio" id="size-lg" name="sizes">
+          <label for="size-lg">Large</label>
 
-          <input type="radio" id="size4" name="sizes">
-          <label for="size4">Extra Large</label>
+          <input type="radio" id="size-el" name="sizes">
+          <label for="size-el">Extra Large</label>
         </li>
 
 
@@ -108,6 +108,7 @@
         <li>
           <p>Additional Cheeses</p>
 
+          <img src="images/parmensan.jpg" alt="parmensan">
           <input type="checkbox" id="extra1" name="extra">
           <label for="extra1">Parmensan</label>
           <select name="extra1">
@@ -116,6 +117,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/threeblend.png" alt="three-blend">
           <input type="checkbox" id="extra2" name="extra">
           <label for="extra2">3-Cheese blend</label>
           <select name="extra2">
@@ -131,6 +133,7 @@
         <li>
           <p>Meats</p>
 
+          <img src="images/sausage.jpg" alt="sausage">
           <input type="checkbox" id="meat1" name="meat">
           <label for="meat1">Sausage</label>
           <select name="meat1">
@@ -139,6 +142,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/pepperoni.jpg" alt="pepperoni">
           <input type="checkbox" id="meat2" name="meat">
           <label for="meat2">Pepperoni</label>
           <select name="meat2">
@@ -147,6 +151,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/bacon.jpg" alt="bacon">
           <input type="checkbox" id="meat3" name="meat">
           <label for="meat3">Bacon</label>
           <select name="meat3">
@@ -155,6 +160,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/canadianbacon.jpg" alt="c-bacon">
           <input type="checkbox" id="meat4" name="meat">
           <label for="meat4">Canadian Bacon</label>
           <select name="meat4">
@@ -169,6 +175,7 @@
         <li>
           <p>Veggies</p>
 
+          <img src="images/mushrooms.jpg" alt="mushrooms">
           <input type="checkbox" id="veggie1" name="veggie">
           <label for="veggie1">Mushrooms</label>
           <select name="veggie1">
@@ -177,6 +184,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/tomatoes.jpg" alt="tomatoes">
           <input type="checkbox" id="veggie2" name="veggie">
           <label for="veggie2">Tomatos</label>
           <select name="veggie2">
@@ -185,6 +193,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/pineapple.jpg" alt="pineapple">
           <input type="checkbox" id="veggie3" name="veggie">
           <label for="veggie3">Pineapple</label>
           <select name="veggie3">
@@ -193,6 +202,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/onion.jpg" alt="onion">
           <input type="checkbox" id="veggie4" name="veggie">
           <label for="veggie4">Onions</label>
           <select name="veggie4">
@@ -201,6 +211,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/olives.jpg" alt="olives">
           <input type="checkbox" id="veggie5" name="veggie">
           <label for="veggie5">Black Olives</label>
           <select name="veggie5">
@@ -209,6 +220,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/jalapenos.jpg" alt="jalapenos">
           <input type="checkbox" id="veggie6" name="veggie">
           <label for="veggie6">Jalapenos</label>
           <select name="veggie6">
@@ -217,6 +229,7 @@
             <option value="right">Right</option>
           </select>
 
+          <img src="images/.jpg" alt="green-peppers">
           <input type="checkbox" id="veggie7" name="veggie">
           <label for="veggie7">Green Peppers</label>
           <select name="veggie7">
@@ -226,8 +239,73 @@
           </select>
         </li>
       </ol>
+    </form>
+
+      <section id="prep-pizza">
+        <h2> Or choose one of our originals </h2>
+      </section>
+
+      <form action="#null" method="get" id="pre-made">
+        <ol>
+          <li>
+            <p>Classics</p>
+
+            <img src="images/cheese-pizza.jpg" alt="cheese">
+            <input type="checkbox" id="cheese" name="classic">
+            <label for="cheese">Cheese pizza</label>
+            <select name="sizes">
+              <option value="size-sm">Small</option>
+              <option value="size-md">Medium</option>
+              <option value="size-lg">Large</option>
+              <option value="size-el">Extra Large</option>
+            </select>
+
+            <img src="images/sausage-pizza.jpg" alt="sausage">
+            <input type="checkbox" id="sausage" name="classic">
+            <label for="sausage">Sausage pizza</label>
+            <select name="sizes">
+              <option value="size-sm">Small</option>
+              <option value="size-md">Medium</option>
+              <option value="size-lg">Large</option>
+              <option value="size-el">Extra Large</option>
+            </select>
+
+            <img src="images/pepp-pizza.jpg" alt="pepp">
+            <input type="checkbox" id="pepp" name="classic">
+            <label for="pepp">Pepperoni pizza</label>
+            <select name="sizes">
+              <option value="size-sm">Small</option>
+              <option value="size-md">Medium</option>
+              <option value="size-lg">Large</option>
+              <option value="size-el">Extra Large</option>
+            </select>
+
+            <img src="images/garbage-pizza.jpg" alt="garbage">
+            <input type="checkbox" id="garbage" name="classic">
+            <label for="garbage">Garbage pizza</label>
+            <select name="sizes">
+              <option value="size-sm">Small</option>
+              <option value="size-md">Medium</option>
+              <option value="size-lg">Large</option>
+              <option value="size-el">Extra Large</option>
+            </select>
+
+<!-- TODO: Add images to pizza builder
+            <img src="images/garbage-pizza.jpg" alt="garbage">
+            ....OR....
+            <figure id="garbage-pizza">
+                <img src="images/garbage-pizza.jpg"
+                alt="test"/>
+                <figcaption>
+                  test
+                </figcaption>
+            </figure>
+-->
+          </li>
+        </ol>
+
       <ul>
-        <li class="button"><a href="../checkout/">Checkout</a></li>
+        <li class="button"><a href="../checkout/">Place my order!</a></li>
         <li class="button"><a href="../">Back</a></li>
       </ul>
     </form>
