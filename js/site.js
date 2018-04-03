@@ -1,3 +1,5 @@
+$('html').removeClass('nojs').addClass('js');
+
 $('#checkout-form').on("submit", function(e) {
   var email = $('#email').val();
   var nCard = $('#nCard').val();
