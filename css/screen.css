@@ -142,6 +142,44 @@ img {
   max-width: 100%;
 }
 
+#meats{
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+
+#sizeAndCrust{
+  margin-top: 1.375em;
+  border: 2px solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+
+#sizeAndCrust{
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+#cheeses{
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+#veggies{
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+#classic {
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
 /* State Styles */
 /*Hint: these tend to be:
 1. Driven by media queries
