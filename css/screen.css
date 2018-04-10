@@ -66,15 +66,23 @@ h2 {
 
 figcaption {
   font-family: 'Bungee Shade';
-  background-color: #A73203;
+  background-color: #FDD5B1;/*;*/
   border-radius: 0.2em;
   text-align: center;
   padding-top: 0.5em;
+  color: #832A0D;
+  font-weight: bold;
+  line-height: 1.25em;
+  opacity: 0.8;
+}
+
+#grabber h2 {
+  color:#FBE7B2;
 }
 
 a {
   font-family: 'Shadows Into Light';
-  color: #F34500;
+  color:#E77200;
   background-color: black;
   border-radius: 0.2em;
 }
