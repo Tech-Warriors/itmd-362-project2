@@ -251,7 +251,55 @@ input[type=submit] {
     cursor: pointer;
     -webkit-border-radius: 0.3125em;
     border-radius: 0.3125em;
-    margin-left: 3em;
+    margin-left: 1em;
+}
+
+#location, #delivery-form, #checkout-form {
+  margin-top: 0.5em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #e0a366;
+}
+
+.info li, .payment li {
+  padding: 0.611em; /* 11 / 18 = 0.6111; (22 - 13) = 9 / 18 = 0.5 */
+  margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
+  border-radius: 0.2em;
+  background: #996633;
+  opacity: 0.6;
+}
+
+.locations label, .info label, .payment label {
+   color: black;
+}
+
+.payment .submit-button {
+  border: none;
+  background: none;
+  clear: both;
+}
+
+#next li {
+  float: right;
+  padding-right: 1em;
+}
+
+input {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  line-height: 1;
+  height: 2.444em; /* 44 / 18 = 2.444 */
+  background: inherit;
+}
+
+input::placeholder {
+  font-family: 'Kalam';
+  font-weight: bold;
+  font-size: 1.25em; /* 26 / 16 = 1.625 */
+  color: whitesmoke; /*text color for input fields*/
+  opacity: 0.8;
 }
 /* State Styles */
 /*Hint: these tend to be:
