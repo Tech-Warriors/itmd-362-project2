@@ -172,7 +172,7 @@ img {
   border-radius: 0.2em;
 }
 
-#meats{
+#sizeandcrust{
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
@@ -192,7 +192,8 @@ img {
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
-#cheeses{
+
+#meats{
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
