@@ -179,14 +179,17 @@ img {
   background-color: #ff531a;
 }
 
-#sizeandcrust{
-  margin-top: 1.375em;
-  border: 2px solid black;
-  padding: 0.687em 0.687em;
-  background-color: #ff531a;
+#sizeandcrust p {
+  line-height: 1.75em;
+  padding-top: 0em;
+  margin-top: 0em;
 }
 
-#sizeandcrust{
+#sizeandcrust label {
+  display: flex;
+}
+
+#cheeses{
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
