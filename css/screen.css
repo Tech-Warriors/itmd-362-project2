@@ -223,6 +223,29 @@ ol label {
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
+
+#prep-pizza h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0em;
+}
+
+#paymentinfo h4 {
+  padding-bottom: 0.8em;
+  color: #FBE7B2;
+  font-family: 'Kaushan Script';
+}
+
+input[type=submit] {
+    padding: 0.3125em 0.9375em;
+    background: #E77200;
+    color: black;
+    font-weight: bold;
+    border: 0.3em solid black;
+    cursor: pointer;
+    -webkit-border-radius: 0.3125em;
+    border-radius: 0.3125em;
+    margin-left: 3em;
+}
 /* State Styles */
 /*Hint: these tend to be:
 1. Driven by media queries
