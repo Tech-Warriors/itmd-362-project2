@@ -89,3 +89,5 @@ $('#checkout-form').on("submit", function(e) {
 
     return result;
   }
+//TODO: ask memebers if they know how to make this work properly with selected and unselected itms on pizza builder
+$(this).toggleClass('checked');
