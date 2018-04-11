@@ -179,13 +179,17 @@ img {
   background-color: #ff531a;
 }
 
-#sizeandcrust p {
+ol p {
   line-height: 1.75em;
-  padding-top: 0em;
+  padding-top: 0.5em;
+}
+
+ol li {
+  padding-top: 0.15em;
   margin-top: 0em;
 }
 
-#sizeandcrust label {
+ol label {
   display: flex;
 }
 
