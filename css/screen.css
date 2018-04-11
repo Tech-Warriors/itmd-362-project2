@@ -189,6 +189,13 @@ input.checked[type="radio"], input.checked[type="checkbox"] {
   cursor: pointer;
 }
 
+/*
+TODO: fix this to reflect proper selection of items!
+input:checked ~ label {
+   border: 2px solid whitesmoke;
+}
+*/
+
 ol label {
   display: flex;
   padding-top: 0em;
