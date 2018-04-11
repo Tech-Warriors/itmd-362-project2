@@ -61,7 +61,6 @@ h1 {
 
 h2 {
   font-family: 'Kaushan Script';
-
 }
 
 figcaption {
@@ -221,9 +220,6 @@ img {
 2. Influenced by JavaScript
 3. Organized by Base, Layout, Module, State
 */
-
-@media screen and (min-width: 22.5em) {  /*360px*/
-}
 
 @media screen and (min-width: 50.25em) {  /* 804px*/
 }
