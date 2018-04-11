@@ -87,6 +87,10 @@ a {
   border-radius: 0.2em;
 }
 
+section h2 {
+  color: #FBE7B2;
+}
+
 body {
   padding-bottom: 1.25em; /* 30 / 24 = 1.25 */
 }
