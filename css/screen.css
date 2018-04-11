@@ -66,15 +66,23 @@ h2 {
 
 figcaption {
   font-family: 'Bungee Shade';
-  background-color: #A73203;
+  background-color: #FDD5B1;/*;*/
   border-radius: 0.2em;
   text-align: center;
   padding-top: 0.5em;
+  color: #832A0D;
+  font-weight: bold;
+  line-height: 1.25em;
+  opacity: 0.8;
+}
+
+#grabber h2 {
+  color:#FBE7B2;
 }
 
 a {
   font-family: 'Shadows Into Light';
-  color: #F34500;
+  color:#E77200;
   background-color: black;
   border-radius: 0.2em;
 }
@@ -107,16 +115,24 @@ figcaption {
 
 .input {
   display: flex;
+  padding-top: 0em;
+}
+
+.input img{
+  padding-top: 0em;
+  margin-left: 1.5em;
 }
 
 .input a {
+  padding-top: 0em;
   line-height: 1;
-  margin-right: 0.611em; /* 11 / 18 = 0.6111 */
-  margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
-  padding: 0.722em 0; /* 13 / 18 = 0.722 */
-  width: 44px;
+  margin-left: 2em;
   text-align: center;
   text-decoration: none;
+}
+
+#home-pizza img {
+  padding-top: 1em;
 }
 
 #main-page h1,
@@ -140,6 +156,7 @@ img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
   display: block;
   max-width: 100%;
+  border-radius: 0.2em;
 }
 
 #meats{
