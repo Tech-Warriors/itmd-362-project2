@@ -13,13 +13,13 @@
   </header>
   <main>
     <section>
-      <h2>Choose a store to pick up at:</h2>
+      <h2>Choose a location:</h2>
     </section>
 
-    <form action="#null" method="get">
-      <ol id="locations">
+    <form action="#null" method="get" id="location">
+      <ol class="locations">
         <li>
-          <input type="radio" id="store1" name="locations" checked="checked" />
+          <input class="checked" type="radio" id="store1" name="locations" checked="checked" />
           <label for="store1">ITMD 362 Pizza
             1234 Roosevelt St.
             Chicago, Il 60612
@@ -27,7 +27,7 @@
         </li>
 
         <li>
-          <input type="radio" id="store2" name="locations" />
+          <input class="checked" type="radio" id="store2" name="locations" />
           <label for="store2">Tech Pizza
             3214 Randolph St.
             Chicago, Il 60612
@@ -35,7 +35,7 @@
         </li>
 
         <li>
-          <input type="radio" id="store3" name="locations" />
+          <input class="checked" type="radio" id="store3" name="locations" />
           <label for="store3">Stolley Pizza
             1931 Hank St.
             Chicago, Il 60601
@@ -43,8 +43,8 @@
         </li>
       </ol>
 
-      <ul>
-        <li class="button"><a href="../pizzabuilder/">Order from this location!</a></li>
+      <ul id="next">
+        <li class="button"><a href="../pizzabuilder/">Order from here!</a></li>
         <li class="button"><a href="../">Back</a></li>
       </ul>
     </form>

@@ -25,8 +25,6 @@ $('#checkout-form').on("submit", function(e) {
 });
 
 //not sure if this code is on the right path or not... can someone check it out and let me know
-
-(function($){
   $('#delivery-form').on('#order-button', function(e) { //by order-button, I mean the link to the pizzabuilder page
     if(!valid_address($('#address').val())) {
       $('label[for="address"]').text("*A valid address has numbers and letters").addClass('warn');
@@ -91,3 +89,5 @@ $('#checkout-form').on("submit", function(e) {
 
     return result;
   }
+//TODO: ask memebers if they know how to make this work properly with selected and unselected itms on pizza builder
+$(this).toggleClass('checked');

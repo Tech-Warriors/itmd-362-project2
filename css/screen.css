@@ -61,7 +61,6 @@ h1 {
 
 h2 {
   font-family: 'Kaushan Script';
-
 }
 
 figcaption {
@@ -85,6 +84,11 @@ a {
   color:#E77200;
   background-color: black;
   border-radius: 0.2em;
+}
+
+section h2 {
+  color: #FBE7B2;
+  padding-bottom: 0.5em;
 }
 
 body {
@@ -131,6 +135,15 @@ figcaption {
   text-decoration: none;
 }
 
+.info li {
+  padding-bottom: 0.923em;
+  padding-top: 0em;
+}
+
+#question h2 {
+  padding-bottom: 1.5em;
+}
+
 #home-pizza img {
   padding-top: 1em;
 }
@@ -145,12 +158,6 @@ figcaption {
   color: black;
 }
 
-/* TODO: REORDER THE INGRIDENTS FOR PIZZA BUILDER!
-#user-order label {
-  display: flex;
-}
-*/
-
 /* Responsive Media */
 img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
@@ -159,27 +166,53 @@ img {
   border-radius: 0.2em;
 }
 
-#meats{
-  margin-top: 1.375em;
-  border: 0.15em solid black;
-  padding: 0.687em 0.687em;
-  background-color: #ff531a;
-}
-
-#sizeandcrust{
-  margin-top: 1.375em;
-  border: 2px solid black;
-  padding: 0.687em 0.687em;
-  background-color: #ff531a;
-}
-
 #sizeandcrust{
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
+
+ol p {
+  line-height: 1.75em;
+  padding-top: 0.5em;
+}
+
+ol li {
+  padding-top: 0.15em;
+  margin-top: 0em;
+  padding-bottom: 0.8em;
+}
+
+input.checked[type="radio"], input.checked[type="checkbox"] {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/*
+TODO: fix this to reflect proper selection of items!
+input:checked ~ label {
+   border: 2px solid whitesmoke;
+}
+*/
+
+ol label {
+  display: flex;
+  padding-top: 0em;
+}
+
+.steps li {
+  padding-top: 0.5em;
+}
+
 #cheeses{
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+
+#meats{
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
@@ -197,15 +230,83 @@ img {
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
+
+#prep-pizza h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0em;
+}
+
+#paymentinfo h4 {
+  padding-bottom: 0.8em;
+  color: #FBE7B2;
+  font-family: 'Kaushan Script';
+}
+
+input[type=submit] {
+    padding: 0.3125em 0.9375em;
+    background: #E77200;
+    color: black;
+    font-weight: bold;
+    border: 0.3em solid black;
+    cursor: pointer;
+    -webkit-border-radius: 0.3125em;
+    border-radius: 0.3125em;
+    margin-left: 1em;
+}
+
+#location, #delivery-form, #checkout-form {
+  margin-top: 0.5em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #e0a366;
+}
+
+.info li, .payment li {
+  padding: 0.611em; /* 11 / 18 = 0.6111; (22 - 13) = 9 / 18 = 0.5 */
+  margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
+  border-radius: 0.2em;
+  background: #996633;
+  opacity: 0.6;
+}
+
+.locations label, .info label, .payment label {
+   color: black;
+}
+
+.payment .submit-button {
+  border: none;
+  background: none;
+  clear: both;
+}
+
+#next li {
+  float: right;
+  padding-right: 1em;
+}
+
+input {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  line-height: 1;
+  height: 2.444em; /* 44 / 18 = 2.444 */
+  background: inherit;
+}
+
+input::placeholder {
+  font-family: 'Kalam';
+  font-weight: bold;
+  font-size: 1.25em; /* 26 / 16 = 1.625 */
+  color: whitesmoke; /*text color for input fields*/
+  opacity: 0.8;
+}
 /* State Styles */
 /*Hint: these tend to be:
 1. Driven by media queries
 2. Influenced by JavaScript
 3. Organized by Base, Layout, Module, State
 */
-
-@media screen and (min-width: 22.5em) {  /*360px*/
-}
 
 @media screen and (min-width: 50.25em) {  /* 804px*/
 }

@@ -36,7 +36,7 @@
       <h4>Payment Info</h4>
     </section>
     <form action="#null" method="get" id="checkout-form" novalidate>
-      <ol>
+      <ol class="payment">
         <li id="email-address">
           <label for="email">Email</label>
           <input placeholder="name@example.com" type="email" id="email" name="email" />
@@ -51,13 +51,13 @@
         </li>
         <li id="exp-date">
           <label for="date">Expiration Date</label>
-          <input type="text" id="date" name="date" />
+          <input placeholder="mm/yy" type="text" id="date" name="date" />
         </li>
         <li id="sec-code">
           <label for="code">Security Code</label>
           <input placeholder="123" type="text" id="code" name="code" />
         </li>
-        <li id="submit-button">
+        <li class="submit-button">
           <input type="submit" id="submit" value="Order now!" />
         </li>
       </ol>
