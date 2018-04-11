@@ -187,6 +187,12 @@ ol p {
 ol li {
   padding-top: 0.15em;
   margin-top: 0em;
+  padding-bottom: 0.8em;
+}
+
+input.checked[type="radio"], input.checked[type="checkbox"] {
+  visibility: hidden;
+  cursor: pointer;
 }
 
 ol label {
