@@ -135,6 +135,15 @@ figcaption {
   text-decoration: none;
 }
 
+.info li {
+  padding-bottom: 0.923em;
+  padding-top: 0em;
+}
+
+#question h2 {
+  padding-bottom: 1.5em;
+}
+
 #home-pizza img {
   padding-top: 1em;
 }
