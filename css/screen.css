@@ -158,12 +158,6 @@ figcaption {
   color: black;
 }
 
-/* TODO: REORDER THE INGRIDENTS FOR PIZZA BUILDER!
-#user-order label {
-  display: flex;
-}
-*/
-
 /* Responsive Media */
 img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
