@@ -309,6 +309,10 @@ input::placeholder {
   color: whitesmoke; /*text color for input fields*/
   opacity: 0.8;
 }
+
+.invalid {
+  color: red;
+}
 /* State Styles */
 /*Hint: these tend to be:
 1. Driven by media queries

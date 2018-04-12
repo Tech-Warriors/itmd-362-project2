@@ -1,45 +1,76 @@
+//validate credit card info, emanil
 $('#checkout-form').on("submit", function(e) {
   var email = $('#email').val();
-  var numberCard = $('#card').val();
-  var name = $('#nCard').val();
-  var expDate = $('#date').val();
-  var secCode = $('#code').val();
-  var emailValid = /.+@.+/;
+  var card = $('#card').val();
+  var nCard = $('#nCard').val();
+  var date = $('#date').val();
+  var code = $('#code').val();
+  var emailValid = /^[^\s@]+@[^\s@]+$/;
   var numberValid = /^\d{16}$/;
   var nameValid = /^[a-zA-Z\s]+$/;
-  var expValid: /^\d{4}$/;
-  var secValid: /^\d{3}$/;
+  var expValid =  /^\d{4}$/;
+  var secValid =  /^\d{3}$/;
+  var result = {
+    email: false,
+    card: false,
+    nCard: false,
+    date: false,
+    code: false
+  };
   e.preventDefault();
+
   if (!emailValid.test(email)) {
     console.log('invalid email');
-    $('#invalid').remove();
+    $('.invalid').remove();
     $('#email-address').append('<li id="invalid">Please enter valid email</li>');
     return false;
-  } else if (!numberValid.test(numberCard)) {
+  } else {
+    $('#invalid').remove();
+    result.email = true;
+  }
+  if (!numberValid.test(card)) {
     console.log('invalid number');
-    $('#invalid').remove();
-    $('#name-card').append('<li id="invalid">Please enter valid card number</li>');
-    return false;
-  } else if (!nameValid.test(name)) {
-    console.log('invalid name');
-    $('#invalid').remove();
-    $('#name-card').append('<li id="invalid">Please enter valid name</li>');
-    return false;
-  } else if (!expValid.test(expDate)) {
-    console.log('invalid expiration');
-    $('#invalid').remove();
-    $('#exp-date').append('<li id="invalid">Please enter valid expiration date</li>');
-    return false;
-  } else if (!expValid.test(secCode)) {
-    console.log('invalid security code');
-    $('#invalid').remove();
-    $('#sec-code').append('<li id="invalid">Please enter valid security code</li>');
+    $('.invalid').remove();
+    $('#credit-card').append('<p class = "invalid">Please enter valid credit card number</P>');
     return false;
   } else {
+    $('#invalid').remove();
+    result.card = true;
+  }
+
+  if (!nameValid.test(nCard)) {
+    console.log('invalid name');
+    $('.invalid').remove();
+    $('#name-card').append('<P class = "invalid">Please enter valid name</p>');
+    return false;
+  } else {
+    $('#invalid').remove();
+    result.nCard = true;
+  }
+  if (!expValid.test(date)) {
+    console.log('invalid expiration');
+    $('.invalid').remove();
+    $('#exp-date').append('<p class="invalid">Please enter valid expiration date</p>');
+    return false;
+  } else {
+    $('#invalid').remove();
+    result.date = true;
+  }
+  if (!expValid.test(code)) {
+    console.log('invalid security code');
+    $('.invalid').remove();
+    $('#sec-code').append('<p class="invalid">Please enter valid security code</p>');
+    return false;
+  } else {
+    $('#invalid').remove();
+    result.code = true;
+  }
+
+  if (result.email === true && result.card === true && result.nCard === true && result.date === true && result.code === true) {
     $(this).remove();
     $('#review').remove();
     $('#paymentInfo').remove();
-    $('body').append('<h2>Thank you!</h2>');
+    $('body').append('<li class="last-item">Thank you!</li>');
   }
 });
 
