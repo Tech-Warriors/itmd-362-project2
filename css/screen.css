@@ -194,7 +194,14 @@ TODO: fix this to reflect proper selection of items!
 */
 input[type=radio]:checked+label,
 input[type=checkbox]:checked+label {
-   border: 2px solid whitesmoke;
+   border: 0.2em inset red;
+   border-radius: 0.4em;
+   background-color: #ffb894;
+   width: 65%;
+   padding-top: 0.1em;
+   padding-bottom: 0.1em;
+   opacity: 0.6;
+   color: black;
 }
 
 ol label {
