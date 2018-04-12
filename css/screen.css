@@ -178,6 +178,11 @@ ol p {
   padding-top: 0.5em;
 }
 
+#pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics  {
+  font-family: 'Merienda';
+  color: black;
+}
+
 ol li {
   padding-top: 0.15em;
   margin-top: 0em;
