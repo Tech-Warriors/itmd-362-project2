@@ -192,10 +192,7 @@ input.checked[type="radio"], input.checked[type="checkbox"] {
 /*
 TODO: fix this to reflect proper selection of items!
 */
-input[type=radio]:checked+label {
-   border: 2px solid whitesmoke;
-}
-
+input[type=radio]:checked+label,
 input[type=checkbox]:checked+label {
    border: 2px solid whitesmoke;
 }
