@@ -9,7 +9,7 @@ $('#checkout-form').on("submit", function(e) {
   var numberValid = /^\d{16}$/;
   var nameValid = /^[a-zA-Z\s]+$/;
   var expValid =  /^\d{4}$/;
-  var secValid =  /^\d{3}$/;
+  var secValid =  /^[0-9]{3,4}$/
   var result = {
     email: false,
     card: false,
@@ -22,7 +22,7 @@ $('#checkout-form').on("submit", function(e) {
   if (!emailValid.test(email)) {
     console.log('invalid email');
     $('.invalid').remove();
-    $('#email-address').append('<li id="invalid">Please enter valid email</li>');
+    $('#email-address').append('<p class="invalid">Please enter valid email</p>');
     return false;
   } else {
     $('#invalid').remove();
@@ -70,7 +70,7 @@ $('#checkout-form').on("submit", function(e) {
     $(this).remove();
     $('#review').remove();
     $('#paymentInfo').remove();
-    $('body').append('<li class="last-item">Thank you!</li>');
+    $('body').append('<p class="last-item">Thank you!</p>');
   }
 });
 
