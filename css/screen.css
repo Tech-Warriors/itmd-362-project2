@@ -178,11 +178,6 @@ ol p {
   padding-top: 0.5em;
 }
 
-#pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics  {
-  font-family: 'Merienda';
-  color: black;
-}
-
 ol li {
   padding-top: 0.15em;
   margin-top: 0em;
@@ -202,11 +197,6 @@ input[type=checkbox]:checked+label {
    border: 0.2em inset red;
    border-radius: 0.4em;
    background-color: #ffb894;
-   width: 65%;
-   padding-top: 0.1em;
-   padding-bottom: 0.1em;
-   opacity: 0.6;
-   color: black;
 }
 
 ol label {
@@ -313,10 +303,6 @@ input::placeholder {
   font-size: 1.25em; /* 26 / 16 = 1.625 */
   color: whitesmoke; /*text color for input fields*/
   opacity: 0.8;
-}
-
-.invalid {
-  color: red;
 }
 /* State Styles */
 /*Hint: these tend to be:
