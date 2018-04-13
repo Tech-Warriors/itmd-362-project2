@@ -73,22 +73,23 @@ figcaption {
   font-weight: bold;
   line-height: 1.25em;
   opacity: 0.8;
-}
-
-#grabber h2 {
-  color:#FBE7B2;
-}
-
-a {
-  font-family: 'Shadows Into Light';
-  color:#E77200;
-  background-color: black;
-  border-radius: 0.2em;
+  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
 }
 
 section h2 {
   color: #FBE7B2;
   padding-bottom: 0.5em;
+}
+
+#grabber h2 {
+  color: #FBE7B2;
+}
+
+a {
+  font-family: 'Shadows Into Light';
+  color: #E77200;
+  background-color: black;
+  border-radius: 0.2em;
 }
 
 body {
@@ -105,60 +106,18 @@ ul {
 
 p {
   font-family: 'Merienda';
-  /*font-family: 'Rock Salt'; /*THIS IS MY PERSONAL FAV */
 }
 
 h4, label {
   font-family: 'Kalam';
 }
 
-figcaption {
-  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
-}
-
-
 .input {
   display: flex;
-  padding-top: 0em;
+  padding-top: 0;
   padding-left: 1em;
 }
 
-.input img{
-  padding-top: 0em;
-}
-
-.input a {
-  padding-top: 0em;
-  line-height: 1;
-  margin: 2em;
-  text-align: right;
-  text-decoration: none;
-}
-
-.info li {
-  padding-bottom: 0.923em;
-  padding-top: 0em;
-}
-
-#question h2 {
-  padding-bottom: 1.5em;
-}
-
-#home-pizza img {
-  padding-top: 1em;
-}
-
-#main-page h1,
-#final-page h1 {
-  line-height: 1.38em; /* 36 / 26 = 1.38*/
-}
-
-#user-order p {
-  /*background-color: #A73203;*/
-  color: black;
-}
-
-/* Responsive Media */
 img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
   display: block;
@@ -167,19 +126,57 @@ img {
   border-style: outset;
   border-bottom: 0.5em;
   border-color: #b2b2ff;
-  padding-top: 0em;
   border-width: 0.1em;
 }
 
-.input img, #home-pizza img {
-    border: none;
+.input img {
+  padding-top: 0;
+  border: none;
 }
 
-#sizeandcrust{
-  margin-top: 1.375em;
-  border: 0.15em solid black;
-  padding: 0.687em 0.687em;
-  background-color: #ff531a;
+input[type="radio"]:checked + label + img,
+input[type="checkbox"]:checked + label + img {
+  border: 0.2em inset red;
+  border-radius: 0.4em;
+  background-color: #ffb894;
+  width: 65%;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  opacity: 0.6;
+  color: black;
+}
+
+.input a {
+  padding-top: 0;
+  line-height: 1;
+  margin: 2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+ol li {
+  padding-top: 0.15em;
+  margin-top: 0;
+  padding-bottom: 0.8em;
+}
+
+.info li {
+  padding-bottom: 0.923em;
+  padding-top: 0;
+}
+
+#home-pizza img {
+  border: none;
+  padding-top: 1em;
+}
+
+#question h2 {
+  padding-bottom: 1.5em;
+}
+
+#main-page h1,
+#final-page h1 {
+  line-height: 1.38em; /* 36 / 26 = 1.38*/
 }
 
 ol p {
@@ -187,57 +184,53 @@ ol p {
   padding-top: 0.5em;
 }
 
-#pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics  {
+#user-order p {
+  color: black;
+}
+
+/* Responsive Media */
+
+#sizeandcrust {
+  margin-top: 1.375em;
+  border: 0.15em solid black;
+  padding: 0.687em 0.687em;
+  background-color: #ff531a;
+}
+
+#pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics {
   font-family: 'Merienda';
   color: black;
 }
 
-ol li {
-  padding-top: 0.15em;
-  margin-top: 0em;
-  padding-bottom: 0.8em;
-}
 
 input.checked[type="radio"], input.checked[type="checkbox"], {
   visibility: hidden;
   cursor: pointer;
 }
 
-input[type=radio]:checked+label+img,
-input[type=checkbox]:checked+label+img {
-   border: 0.2em inset red;
-   border-radius: 0.4em;
-   background-color: #ffb894;
-   width: 65%;
-   padding-top: 0.1em;
-   padding-bottom: 0.1em;
-   opacity: 0.6;
-   color: black;
-}
-
 ol label {
   display: flex;
-  padding-top: 0em;
+  padding-top: 0;
 }
 
 .steps li {
   padding-top: 0.5em;
 }
 
-#cheeses{
+#cheeses {
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
 
-#meats{
+#meats {
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
   background-color: #ff531a;
 }
-#veggies{
+#veggies {
   margin-top: 1.375em;
   border: 0.15em solid black;
   padding: 0.687em 0.687em;
@@ -252,7 +245,7 @@ ol label {
 
 #prep-pizza h2 {
   padding-top: 1.5em;
-  padding-bottom: 0em;
+  padding-bottom: 0;
 }
 
 #paymentinfo h4 {
@@ -261,16 +254,16 @@ ol label {
   font-family: 'Kaushan Script';
 }
 
-input[type=submit] {
-    padding: 0.3125em 0.9375em;
-    background: #E77200;
-    color: black;
-    font-weight: bold;
-    border: 0.3em solid black;
-    cursor: pointer;
-    -webkit-border-radius: 0.3125em;
-    border-radius: 0.3125em;
-    margin-left: 1em;
+input[type="submit"] {
+  padding: 0.3125em 0.9375em;
+  background: #E77200;
+  color: black;
+  font-weight: bold;
+  border: 0.3em solid black;
+  cursor: pointer;
+  -webkit-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  margin-left: 1em;
 }
 
 #location, #delivery-form, #checkout-form {
@@ -289,7 +282,7 @@ input[type=submit] {
 }
 
 .locations label, .info label, .payment label {
-   color: black;
+  color: black;
 }
 
 .payment .submit-button {
@@ -332,6 +325,23 @@ input::placeholder {
 */
 
 @media screen and (min-width: 50.25em) {  /* 804px*/
+
+  .button img {
+    padding-left: 5%;
+  }
+
+  input[type="radio"]:checked + label + img,
+  input[type="checkbox"]:checked + label + img {
+    border: 0.2em inset red;
+    border-radius: 0.4em;
+    background-color: #ffb894;
+    width: 65%;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    opacity: 0.6;
+    color: black;
+  }
+
   #home-pizza img, #home-pizza figcaption {
     width: 80%;
     margin-left: 3em;
@@ -341,11 +351,7 @@ input::placeholder {
     margin-left: 5%;
   }
 
-  .button img {
-    padding-left: 5%;
-  }
-
-  #order-button a, .button a {
+  .button a, #order-button a {
     border-radius: 2em;
     border-style: outset;
     border-color: #DAA520;
@@ -381,18 +387,6 @@ input::placeholder {
     cursor: pointer;
   }
 
-  input[type=radio]:checked+label+img,
-  input[type=checkbox]:checked+label+img {
-     border: 0.2em inset red;
-     border-radius: 0.4em;
-     background-color: #ffb894;
-     width: 65%;
-     padding-top: 0.1em;
-     padding-bottom: 0.1em;
-     opacity: 0.6;
-     color: black;
-  }
-
   #user-order ol {
     width: 100%;
     margin-top: 1.375em;
@@ -401,27 +395,27 @@ input::placeholder {
     background-color: #ff531a;
   }
 
-  #sizeandcrust{
+  #sizeandcrust {
     margin-top: 1.375em;
     border: 0.15em solid black;
     padding: 0.687em 0.687em;
     background-color: #ff531a;
   }
 
-  #cheeses{
+  #cheeses {
     margin-top: 1.375em;
     border: 0.15em solid black;
     padding: 0.687em 0.687em;
     background-color: #ff531a;
   }
 
-  #meats{
+  #meats {
     margin-top: 1.375em;
     border: 0.15em solid black;
     padding: 0.687em 0.687em;
     background-color: #ff531a;
   }
-  #veggies{
+  #veggies {
     margin-top: 1.375em;
     border: 0.15em solid black;
     padding: 0.687em 0.687em;
@@ -436,4 +430,6 @@ input::placeholder {
 }
 
 @media screen and (min-width: 82.5em) {  /*1320px*/
+
+
 }
