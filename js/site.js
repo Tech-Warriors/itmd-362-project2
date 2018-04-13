@@ -147,7 +147,7 @@ $('#order-button').on("click", function(e) {
     $('#invalid').remove();
   }
 
-  if (!phoneValid.test(phone)) {
+  /* if (!phoneValid.test(phone)) {
     console.log('invalid phone');
     $('.invalid').remove();
     $('#ph').append('<p class = "invalid">Please enter valid phone</P>');
@@ -157,7 +157,7 @@ $('#order-button').on("click", function(e) {
   }
 });
 
-/* not sure if this code is on the right path or not... can someone check it out and let me know
+not sure if this code is on the right path or not... can someone check it out and let me know
 $('#delivery-form').on('#order-button', function(e) { // by order-button, I mean the link to the pizzabuilder page
   if (!valid_address($('#address').val())) {
     $('label[for="address"]').text("*A valid address has numbers and letters").addClass('warn');
@@ -235,4 +235,4 @@ if (docCookies.hasItem('seats')) {
 
   $('#size-order').text('Test ' + invoice + '.');
 }
-*/
+ */
