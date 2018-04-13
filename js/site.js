@@ -14,7 +14,7 @@ $('#checkout-form').on("submit", function(e) {
   var numberValid = /^\d{16}$/;
   var nameValid = /^[a-zA-Z\s]+$/;
   var expValid =  /^\d{4}$/;
-  var secValid =  /^\d{3}$/
+  var secValid =  /^\d{3}$/;
   var result = {
     email: false,
     card: false,
