@@ -13,8 +13,8 @@ $('#checkout-form').on("submit", function(e) {
   var emailValid = /^[^\s@]+@[^\s@]+$/;
   var numberValid = /^\d{16}$/;
   var nameValid = /^[a-zA-Z\s]+$/;
-  var expValid =  /^\d{4}$/;
-  var secValid =  /^\d{3}$/;
+  var expValid = /^\d{4}$/;
+  var secValid = /^\d{3,4}$/;
   var result = {
     email: false,
     card: false,
@@ -61,7 +61,7 @@ $('#checkout-form').on("submit", function(e) {
     $('#invalid').remove();
     result.date = true;
   }
-  if (!expValid.test(code)) {
+  if (!secValid.test(code)) {
     console.log('invalid security code');
     $('.invalid').remove();
     $('#sec-code').append('<p class="invalid">Please enter valid security code</p>');
