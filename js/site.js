@@ -14,7 +14,7 @@ $('#checkout-form').on("submit", function(e) {
   var numberValid = /^\d{16}$/;
   var nameValid = /^[a-zA-Z\s]+$/;
   var expValid =  /^\d{4}$/;
-  var secValid =  /^[0-9]{3,4}$/
+  var secValid =  /^\d{3}$/
   var result = {
     email: false,
     card: false,
@@ -104,7 +104,6 @@ function valid_address(address) { //checks to make sure field is not empty
 
   return result;
 }
-
 
 function valid_zipcode(zip) { //was trying to mimic the automatic city and state fill out with the zip code API
   var result = false;
