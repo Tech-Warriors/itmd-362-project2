@@ -332,6 +332,107 @@ input::placeholder {
 */
 
 @media screen and (min-width: 50.25em) {  /* 804px*/
+  #home-pizza img, #home-pizza figcaption {
+    width: 80%;
+    margin-left: 3em;
+  }
+
+  .input li {
+    margin-left: 5%;
+  }
+
+  .button img {
+    padding-left: 5%;
+  }
+
+  #order-button a, .button a {
+    border-radius: 2em;
+    border-style: outset;
+    border-color: #DAA520;
+    border-width: 0.125em;
+    display: block;
+    color: #feffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e5c100;
+    font-variant: small-caps;
+    width: 60%;
+    padding-right: 1em;
+    margin-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  #delivery-form ol {
+    width: 70%;
+  }
+
+  form {
+    margin-left: 15%;
+    width: 50%;
+  }
+
+  #location ol {
+    width: 100%;
+  }
+
+  input.checked[type="radio"], input.checked[type="checkbox"] {
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  input[type=radio]:checked+label+img,
+  input[type=checkbox]:checked+label+img {
+     border: 0.2em inset red;
+     border-radius: 0.4em;
+     background-color: #ffb894;
+     width: 65%;
+     padding-top: 0.1em;
+     padding-bottom: 0.1em;
+     opacity: 0.6;
+     color: black;
+  }
+
+  #user-order ol {
+    width: 100%;
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
+
+  #sizeandcrust{
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
+
+  #cheeses{
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
+
+  #meats{
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
+  #veggies{
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
+  #classic {
+    margin-top: 1.375em;
+    border: 0.15em solid black;
+    padding: 0.687em 0.687em;
+    background-color: #ff531a;
+  }
 }
 
 @media screen and (min-width: 82.5em) {  /*1320px*/
