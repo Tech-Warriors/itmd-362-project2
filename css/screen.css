@@ -134,6 +134,8 @@ img {
   border: none;
 }
 
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label + img,
 input[type="checkbox"]:checked + label + img {
   border: 0.2em inset red;
