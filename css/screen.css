@@ -115,18 +115,14 @@ h4, label {
 .input {
   display: flex;
   padding-top: 0;
-  padding-left: 1em;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
   display: block;
   max-width: 100%;
-  border-radius: 0.2em;
-  border-style: outset;
-  border-bottom: 0.5em;
-  border-color: #b2b2ff;
-  border-width: 0.1em;
 }
 
 .input img {
