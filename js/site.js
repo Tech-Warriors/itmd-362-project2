@@ -1,6 +1,6 @@
 $('html').removeClass('nojs').addClass('js');
 
-/* https://github.com/madmurphy/cookies.js (GPL3) */
+/* https://github.com/madmurphy/cookies.js (GPL3)
 var docCookies = {
   getItem: function(e) {
     return e ? decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(e).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null : null
@@ -27,13 +27,13 @@ var docCookies = {
     return !e || /^(?:expires|max\-age|path|domain|secure)$/i.test(e) ? !1 : new RegExp("(?:^|;\\s*)" + encodeURIComponent(e).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=").test(document.cookie)
   },
   keys: function() {
-    for (var e = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/), o = e.length, n = 0; o > n; n++) e[n] = decodeURIComponent(e[n]);
+    for (var e = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*//* ), o = e.length, n = 0; o > n; n++) e[n] = decodeURIComponent(e[n]);
     return e
   }
 };
 "undefined" != typeof module && "undefined" != typeof module.exports && (module.exports = docCookies);
-
-//validate credit card info, emanil
+*/
+// validate credit card info, emanil
 $('#checkout-form').on("submit", function(e) {
   var email = $('#email').val();
   var card = $('#card').val();
@@ -109,13 +109,13 @@ $('#checkout-form').on("submit", function(e) {
   }
 });
 
-//validate delivery address
+// validate delivery address
 $('#order-button').on("click", function(e) {
   var address = $('#address').val();
   var city = $('#city').val();
   var zip = $('#zip').val();
   var phone = $('#phone').val();
-  var addressValid = /^\d+\s[A-z]+\s[A-z]$/;
+  var addressValid = /^\d+\s[A-z]+\s[A-z]+$/;
   var cityValid = /^[a-zA-Z\s]+$/;
   var zipValid = /^\d{5}$/;
   var phoneValid = /^\d{10}$/;
@@ -154,11 +154,11 @@ $('#order-button').on("click", function(e) {
     return false;
   } else {
     $('#invalid').remove();
-  });
+  }
+});
 
-/*
-//not sure if this code is on the right path or not... can someone check it out and let me know
-$('#delivery-form').on('#order-button', function(e) { //by order-button, I mean the link to the pizzabuilder page
+/* not sure if this code is on the right path or not... can someone check it out and let me know
+$('#delivery-form').on('#order-button', function(e) { // by order-button, I mean the link to the pizzabuilder page
   if (!valid_address($('#address').val())) {
     $('label[for="address"]').text("*A valid address has numbers and letters").addClass('warn');
   } else if (!valid_zipcode($('#zip').val())) {
