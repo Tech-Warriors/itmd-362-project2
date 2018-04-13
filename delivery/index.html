@@ -17,15 +17,15 @@
     </section>
     <form action="#null" method="get" id="delivery-form" novalidate="novalidate">
     <ol class="info">
-      <li>
+      <li id = "addr">
         <label for="address">Address:</label>
         <input placeholder="123 Seasame St" type="text" id="address" name="user-address" />
       </li>
-      <li>
+      <li id = "cit">
         <label for="city">City:</label>
         <input placeholder="Chicago" type="text" id="city" name="user-city" />
       </li>
-      <li>
+      <li id = "st">
         <label for="state">State:</label>
         <select name="user-state" id="state">
           <option value="AL">Alabama</option>
@@ -81,11 +81,11 @@
           <option value="WY">Wyoming</option>
         </select>
       </li>
-      <li>
+      <li id = "zi">
         <label for="zip">Zip code:</label>
         <input placeholder="5-digit" type="number" id="zip" name="user-zip" />
       </li>
-      <li class="phone">
+      <li id = "ph" class="phone">
         <label for="phone">Phone number:</label>
         <input placeholder="###-###-####" type="tel" id="phone" name="user-phone" />
       </li>
