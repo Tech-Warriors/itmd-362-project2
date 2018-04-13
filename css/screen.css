@@ -178,6 +178,11 @@ ol p {
   padding-top: 0.5em;
 }
 
+#pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics  {
+  font-family: 'Merienda';
+  color: black;
+}
+
 ol li {
   padding-top: 0.15em;
   margin-top: 0em;
@@ -308,6 +313,10 @@ input::placeholder {
   font-size: 1.25em; /* 26 / 16 = 1.625 */
   color: whitesmoke; /*text color for input fields*/
   opacity: 0.8;
+}
+
+.invalid {
+  color: red;
 }
 /* State Styles */
 /*Hint: these tend to be:
