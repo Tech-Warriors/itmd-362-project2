@@ -198,16 +198,13 @@ ol li {
   padding-bottom: 0.8em;
 }
 
-input.checked[type="radio"], input.checked[type="checkbox"] {
+input.checked[type="radio"], input.checked[type="checkbox"], {
   visibility: hidden;
   cursor: pointer;
 }
 
-/*
-TODO: fix this to reflect proper selection of items!
-*/
-input[type=radio]:checked+label,
-input[type=checkbox]:checked+label {
+input[type=radio]:checked+label+img,
+input[type=checkbox]:checked+label+img {
    border: 0.2em inset red;
    border-radius: 0.4em;
    background-color: #ffb894;
