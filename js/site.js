@@ -37,7 +37,7 @@ var docCookies = {
 $('#checkout-form').on("submit", function(e) {
   var email = $('#email').val();
   var card = $('#card').val();
-  var nCard = $('#nCard').val();
+  var nCard = $('#ncard').val();
   var date = $('#date').val();
   var code = $('#code').val();
   var emailValid = /^[^\s@]+@[^\s@]+$/;
@@ -58,7 +58,7 @@ $('#checkout-form').on("submit", function(e) {
     console.log('invalid email');
     $('.invalid').remove();
     $('#email-address').append('<p class="invalid">Please enter valid email</p>');
-    return false;
+    result.email = false;
   } else {
     $('#invalid').remove();
     result.email = true;
@@ -143,10 +143,11 @@ $('#order-button').on("click", function(e) {
     $('.invalid').remove();
     $('#zi').append('<p class = "invalid">Please enter valid zip</P>');
     return false;
-  } else {
+  }
+  else {
     $('#invalid').remove();
   }
-
+});
   /* if (!phoneValid.test(phone)) {
     console.log('invalid phone');
     $('.invalid').remove();
