@@ -85,6 +85,19 @@ section h2 {
   color: #FBE7B2;
 }
 
+#grabber p {
+  color: black;
+  font-weight: bold;
+}
+
+#crust {
+  padding-top: 1em;
+}
+
+.builder p {
+  color: blue;
+}
+
 a {
   font-family: "Shadows Into Light";
   color: #E77200;
