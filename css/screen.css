@@ -65,7 +65,7 @@ h2 {
 
 figcaption {
   font-family: "Bungee Shade";
-  background-color: #FDD5B1;/*;*/
+  background-color: #FDD5B1;
   border-radius: 0.2em;
   text-align: center;
   padding-top: 0.5em;
@@ -79,6 +79,7 @@ figcaption {
 section h2 {
   color: #FBE7B2;
   padding-bottom: 0.5em;
+  font-size: 0.8em;
 }
 
 #grabber h2 {
@@ -86,9 +87,21 @@ section h2 {
 }
 
 #grabber p {
-  color: black;
+  font-family: "Kalam";
+  color: #FDD5B1;
+  background-color: #832A0D;
+  margin-top: 2em;
+  opacity: 0.8;
   font-weight: bold;
+  text-align: center;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: #E77200;
+  border-width: 0.2em;
+  padding: 0.5em;
+  font-size: 0.8em;
 }
+
 
 #crust {
   padding-top: 1em;
@@ -136,6 +149,10 @@ img {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
   display: block;
   max-width: 100%;
+}
+
+#or img {
+  width: 10%;
 }
 
 .input img {
@@ -186,7 +203,6 @@ ol li {
 }
 
 #home-pizza img {
-  border: none;
   padding-top: 1em;
 }
 
