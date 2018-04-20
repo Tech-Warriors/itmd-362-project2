@@ -16,20 +16,31 @@
   </header>
   <main id="grabber">
     <h2> Get it how you want it! </h2>
-    <p> Choose from either pick-up or delivery to get started. </p>
+
     <figure id="home-pizza">
         <img src="images/home-pizza.jpg"
         alt="Photo of Tech Warrior's signature pizza"/>
         <figcaption>
           Choose from our classics or make a pizza all your own!
         </figcaption>
-      </figure>
-  <form id="user" method="get" action="#null" novalidate="novalidate">
-    <ul class="input">
-      <li class="button"><a href="delivery/"><img src="images/delivery.png" alt="deliver" />Delivery</a></li>
-      <li class="button"><a href="pickup/"><img src="images/pickup.png" alt="pickup" />Pick-up</a></li>
-    </ul>
-  </form>
+    </figure>
+
+    <form id="user" method="get" action="#null" novalidate="novalidate">
+      <ul class="input">
+        <li class="button"><a href="delivery/"><img src="images/delivery.png" alt="deliver" />Delivery</a></li>
+<!-- TODO: reformat in CSS for better presentation of options
+      </ul>
+        <figure id="or">
+          <img src="images/or.png"
+          alt="Delivery or Pick-up"/>
+        </figure>
+      <ul class="input">
+-->
+        <li class="button"><a href="pickup/"><img src="images/pickup.png" alt="pickup" />Pick-up</a></li>
+      </ul>
+      <p> Let's get started, choose where you want your pizza to go. </p>
+    </form>
+
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
