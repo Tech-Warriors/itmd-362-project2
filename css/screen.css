@@ -78,6 +78,7 @@ figcaption {
 
 section h2 {
   color: #FBE7B2;
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
   font-size: 0.8em;
 }
@@ -107,10 +108,6 @@ section h2 {
   padding-top: 1em;
 }
 
-.builder p {
-  color: blue;
-}
-
 a {
   font-family: "Shadows Into Light";
   color: #E77200;
@@ -124,6 +121,10 @@ body {
 
 li {
   padding-top: 1.25em; /* 30 / 24 = 1.25 */
+  color: #ffffd6;
+  font-style: italic;
+  font-size: 0.823em;
+  text-align: right;
 }
 
 ul {
@@ -163,6 +164,8 @@ img {
 ol label {
   display: flex;
   padding-top: 0;
+  color: yellow;
+  padding-bottom: 0.5em;
 }
 
 .locations label, .info label, .payment label {
@@ -236,6 +239,10 @@ ol p {
 #pizzastyle, #crust, #sauce, #homuchcheese, #additionalcheese, #meat, #vegg, #classics {
   font-family: "Merienda";
   color: black;
+  font-weight: bold;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  text-align: left;
 }
 
 
@@ -246,6 +253,7 @@ input.checked[type="radio"], input.checked[type="checkbox"] {
 
 .steps li {
   padding-top: 0.5em;
+  display: none;
 }
 
 #cheeses {
@@ -304,6 +312,10 @@ input[type="submit"] {
   background-color: #e0a366;
 }
 
+.steps {
+  display: none;
+}
+
 .info li, .payment li {
   padding: 0.611em; /* 11 / 18 = 0.6111; (22 - 13) = 9 / 18 = 0.5 */
   margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
@@ -351,10 +363,11 @@ input::placeholder {
 3. Organized by Base, Layout, Module, State
 */
 
-@media screen and (min-width: 50.25em) {  /* 804px*/
+@media screen and (min-width: 46.875em) {  /* 750px*/
 
-  .button img {
-    padding-left: 5%;
+  p {
+    margin-left: 25%;
+    padding: 0;
   }
 
   input[type="radio"]:checked + label + img,
@@ -390,6 +403,16 @@ input::placeholder {
     margin-left: 2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+  }
+
+  select {
+    color: black;
+    background-color: #d1d1ba;
+    -webkit-border-radius: 1.25em;
+    -moz-border-radius: 1.25em;
+    border-color: gray;
+    border-radius: 1.25em;
+    padding-left: 0.9375em;
   }
 
   #delivery-form ol {
@@ -453,6 +476,11 @@ input::placeholder {
 }
 
 @media screen and (min-width: 82.5em) {  /*1320px*/
+
+  body {
+    width: 100%;
+  }
+
   .button img {
     padding-left: 5%;
   }
@@ -462,7 +490,7 @@ input::placeholder {
     border: 0.2em inset red;
     border-radius: 0.4em;
     background-color: #ffb894;
-    width: 65%;
+    width: 85%;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     opacity: 0.6;
@@ -489,7 +517,7 @@ input::placeholder {
     text-decoration: none;
     background-color: #e5c100;
     font-variant: small-caps;
-    width: 60%;
+    width: 80%;
     padding-right: 1em;
     margin-left: 2em;
     padding-top: 0.5em;
