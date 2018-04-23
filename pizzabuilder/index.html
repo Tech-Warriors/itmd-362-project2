@@ -13,7 +13,7 @@
   </header>
   <main>
     <section>
-      <h2>Create Your Own:</h2>
+      <h2>Create your own by clicking or tapping on the yellow titles:</h2>
     </section>
 
     <form action="#null" method="get" id="user-order">
@@ -33,22 +33,35 @@
       </ol>
 
       <ol id="sizeandcrust">
-        <li id ="pizzastyle">Pizza Size</li>
+        <li id="pizzastyle">Pizza Size</li>
         <li>
+
           <input class="checked" type="radio" id="size-sm" name="sizes" />
           <label for="size-sm">Small</label>
+          <li> 10" </li>
+          <li> Feeds 1-3 </li>
+          <li> Price: $4.50 </li>
 
           <input class="checked" type="radio" id="size-md" name="sizes" />
           <label for="size-md">Medium</label>
+          <li> 12" </li>
+          <li> Feeds 2-4 </li>
+          <li> Price: $8.50 </li>
 
           <input class="checked" type="radio" id="size-lg" name="sizes" />
           <label for="size-lg">Large</label>
+          <li> 14" </li>
+          <li> Feeds 3-5 </li>
+          <li> Price: $12.50 </li>
 
           <input class="checked" type="radio" id="size-el" name="sizes" />
-          <label for="size-el">Extra Large</label>
+          <label for="size-el">X-Large</label>
+          <li> 16" </li>
+          <li> Feeds 5-6 </li>
+          <li> Price: $16.50 </li>
         </li>
 
-          <li id ="crust">Crust Style</li>
+        <li id="crust">Crust Style</li>
         <li>
           <input class="checked" type="radio" id="crust1" name="crusts" checked="checked" />
           <label for="crust1">Original</label>
@@ -62,11 +75,10 @@
           <input class="checked" type="radio" id="crust4" name="crusts" />
           <label for="crust4">Gluten-Free</label>
         </li>
-
       </ol>
 
       <ol id="cheeses">
-        <li id ="sauce">Sauce</li>
+        <li id="sauce">Sauce</li>
         <li>
           <input class="checked" type="radio" id="sauce1" name="sauses" checked="checked" />
           <label for="sauce1">Original</label>
@@ -86,9 +98,8 @@
           </select>
         </li>
 
-        <li id ="homuchcheese">How much cheese?</li>
+        <li id="homuchcheese">Cheese</li>
         <li>
-
           <input class="checked" type="radio" id="cheese1" name="qty" checked="checked" />
           <label for="cheese1">Normal</label>
 
@@ -102,7 +113,8 @@
           <label for="cheese4">None</label>
         </li>
 
-        <li id ="additionalcheese">Additional Cheeses</li>
+        <li id="additionalcheese">Additional Cheeses</li>
+        <li> * $0.50 extra </li>
         <li>
 
           <input class="checked" type="checkbox" id="extra1" name="extra" />
@@ -127,7 +139,8 @@
 
 
       <ol id="meats">
-        <li id ="meat">Meats</li>
+        <li id="meat">Meats</li>
+        <li> * $2.50 extra per meat added </li>
         <li>
 
           <input class="checked" type="checkbox" id="meat1" name="meat" />
@@ -169,7 +182,8 @@
       </ol>
 
       <ol id="veggies">
-        <li id ="vegg">Veggies</li>
+        <li id="vegg">Veggies</li>
+        <li> * $0.50 extra per veggie added </li>
         <li>
 
           <input class="checked" type="checkbox" id="veggie1" name="veggie" />
@@ -244,47 +258,47 @@
 
       <form action="#null" method="get" id="pre-made">
         <ol id="classic">
-          <li id ="classics">Classics</li>
+          <li id="classics">Classics</li>
           <li>
 
             <input class="checked" type="checkbox" id="cheese" name="classic" />
             <label for="cheese">Cheese pizza</label>
             <img src="../images/cheese-pizza.jpg" alt="cheese" />
             <select name="sizes">
-              <option value="size-sm">Small</option>
-              <option value="size-md">Medium</option>
-              <option value="size-lg">Large</option>
-              <option value="size-el">Extra Large</option>
+              <option value="size-sm">Small: $4.50</option>
+              <option value="size-md">Medium: $6.50</option>
+              <option value="size-lg">Large: $8.50</option>
+              <option value="size-el">X-Large: $10.50</option>
             </select>
 
             <input class="checked" type="checkbox" id="sausage" name="classic" />
             <label for="sausage">Sausage pizza</label>
             <img src="../images/sausage-pizza.jpg" alt="sausage" />
             <select name="sizes">
-              <option value="size-sm">Small</option>
-              <option value="size-md">Medium</option>
-              <option value="size-lg">Large</option>
-              <option value="size-el">Extra Large</option>
+              <option value="size-sm">Small: $5.50</option>
+              <option value="size-md">Medium: $7.50</option>
+              <option value="size-lg">Large: $9.50</option>
+              <option value="size-el">X-Large: $11.50</option>
             </select>
 
             <input class="checked" type="checkbox" id="pepp" name="classic" />
             <label for="pepp">Pepperoni pizza</label>
             <img src="../images/pepp-pizza.jpg" alt="pepp" />
             <select name="sizes">
-              <option value="size-sm">Small</option>
-              <option value="size-md">Medium</option>
-              <option value="size-lg">Large</option>
-              <option value="size-el">Extra Large</option>
+              <option value="size-sm">Small: $5.50</option>
+              <option value="size-md">Medium: $7.50</option>
+              <option value="size-lg">Large: $9.50</option>
+              <option value="size-el">X-Large: $11.50</option>
             </select>
 
             <input class="checked" type="checkbox" id="garbage" name="classic" />
             <label for="garbage">Garbage pizza</label>
             <img src="../images/garbage-pizza.jpg" alt="garbage" />
             <select name="sizes">
-              <option value="size-sm">Small</option>
-              <option value="size-md">Medium</option>
-              <option value="size-lg">Large</option>
-              <option value="size-el">Extra Large</option>
+              <option value="size-sm">Small: $7.50</option>
+              <option value="size-md">Medium: $9.50</option>
+              <option value="size-lg">Large: $11.50</option>
+              <option value="size-el">X-Large: $13.50</option>
             </select>
           </li>
         </ol>
