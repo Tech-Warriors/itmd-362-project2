@@ -109,7 +109,7 @@ $('#checkout-form').on("submit", function(e) {
   }
 });
 
-// validate delivery address
+/* validate delivery address
 $('#order-button').on("click", function(e) {
   var address = $('#address').val();
   var city = $('#city').val();
@@ -147,7 +147,8 @@ $('#order-button').on("click", function(e) {
   else {
     $('#invalid').remove();
   }
-});
+}); */
+
   /* if (!phoneValid.test(phone)) {
     console.log('invalid phone');
     $('.invalid').remove();
